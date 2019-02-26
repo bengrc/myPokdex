@@ -1,0 +1,24 @@
+<div id="mySearchBar">
+  <mat-form-field color="warn" class="searchBar">
+    <textarea matInput [(ngModel)]="filtertext" placeholder="Search pokemon(s) by name, id or type"></textarea>
+  </mat-form-field>
+</div>
+
+<mat-grid-list #grid rowHeight="2:1">
+  <mat-grid-tile *ngFor="let pokemon of pokemons | pokemonFilter: filtertext">
+    <mat-card class="pokemonCard">
+      <mat-card-header>
+        <div>
+          <mat-card-title>{{pokemon.name}}</mat-card-title>
+          <mat-card-subtitle>#{{pokemon.id}}</mat-card-subtitle>
+          <mat-chip-list class="mat-chip-list" *ngFor="let type of pokemon.type">
+            <mat-chip color="accent" selected>{{type}}</mat-chip>          
+          </mat-chip-list>
+        </div>
+      </mat-card-header>  
+      <div style="text-align: center;">
+        <img mat-card-sm-image src={{pokemon.img}} class="pokemonImage" alt={{pokemon.name}}>      
+      </div>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

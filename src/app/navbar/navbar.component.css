@@ -1,0 +1,13 @@
+#brand {
+    width: 40px;
+}
+
+#brandBox {
+    margin: 0 auto;
+    padding-top: 6px;
+}
+
+.myNav {
+    height: 60px;
+    box-shadow: 1px 1px 12px #555;
+};

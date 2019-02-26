@@ -1,0 +1,27 @@
+mat-card {
+    width: 80%;
+    height: 80%;
+}
+
+.pokemonImage {
+    padding-right: 15px;
+    width: 140px;
+    height: 140px;
+}
+
+.searchBar {
+    width: 90%;
+}
+  
+#mySearchBar {
+    padding-top: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.pokemonCard {
+    display: flex;
+    justify-content: space-between;
+    height:140px;
+    width: 320px;
+}
