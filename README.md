@@ -1,6 +1,6 @@
 # myPokedex
 
-Made by Benjamin Gracia
+Made by Benjamin Gracia.
 
 ## Development server
 
